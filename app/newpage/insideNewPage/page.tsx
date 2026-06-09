@@ -1,3 +1,10 @@
+import ApiRequest from "@/app/components/ApiRequest";
+
 export default function insidePage() {
-  return <h1> inside New Page</h1>;
+  return (
+    <>
+      inside New Page call api with client component
+      <ApiRequest />
+    </>
+  );
 }

@@ -7,7 +7,7 @@ type Props = {
 // promise timeout
 
 export default async function PostDetailsSuspense({ post }: { post: string }) {
-  await new Promise((resolve) =>
+  await new Promise<void>((resolve) =>
     setTimeout(() => {
       resolve();
     }, 2000),
