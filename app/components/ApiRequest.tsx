@@ -7,9 +7,7 @@ export default function ApiRequest() {
   useEffect(() => {
     // وظيفة لجلب البيانات من API خارجي
     const fetchTodo = async () => {
-      const response = await fetch(
-        "https://jsonplaceholder.typicode.com/todos/1",
-      );
+      const response = await fetch("https://dummyjson.com/todos/1");
       const result = await response.json();
       setTodo(result); // تحديث الحالة بالبيانات الجديدة
     };
@@ -19,7 +17,7 @@ export default function ApiRequest() {
   // console.log(todo);
   return (
     <>
-      <h1>{todo.title}</h1>
+      <h1>{todo.title}</h1>{" "}
     </>
   );
 }
