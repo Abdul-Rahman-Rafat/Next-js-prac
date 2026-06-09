@@ -40,6 +40,9 @@ export default function RootLayout({
             <li>
               <Link href="/newpage/insideNewPage">inside newPage</Link>
             </li>
+            <li>
+              <Link href="/posts">posts</Link>
+            </li>
           </ul>
         </nav>
         {children}

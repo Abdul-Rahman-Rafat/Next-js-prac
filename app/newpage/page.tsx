@@ -1,3 +1,12 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "New Page",
+};
 export default function newPage() {
-  return <h1> New Page</h1>;
+  return (
+    <>
+      <h1> new Page</h1>
+    </>
+  );
 }
