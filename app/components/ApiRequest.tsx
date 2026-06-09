@@ -16,7 +16,7 @@ export default function ApiRequest() {
 
     fetchTodo();
   }, []); // مصفوفة فارغة لضمان تشغيل الكود مرة واحدة عند تحميل المكون
-  console.log(todo);
+  // console.log(todo);
   return (
     <>
       <h1>{todo.title}</h1>

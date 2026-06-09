@@ -11,7 +11,7 @@ export default function PostsLayout({
 }>) {
   return (
     <div className="p-4">
-      <h1>Posts</h1>
+      {/* <h1>Posts</h1> */}
       {children}
     </div>
   );
