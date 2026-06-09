@@ -1,8 +1,17 @@
+import { resolve } from "path/win32";
+
 type Props = {
   params: Promise<{ post: string }>;
 };
 
+// promise timeout
+
 export default async function PostPage({ params }: Props) {
+  await new Promise((resolve) =>
+    setTimeout(() => {
+      resolve();
+    }, 2000),
+  );
   const { post } = await params;
 
   const response = await fetch(`https://dummyjson.com/posts/${post}`, {

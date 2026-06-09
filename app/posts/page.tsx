@@ -1,19 +1,11 @@
 import ApiRequest from "../components/ApiRequest";
 import Link from "next/link";
 export default async function postsPage() {
-  // الميزة في الssr
-  // هنكتب الapi  على طول بدون useEffect
-
-  // 1. جلب البيانات مباشرة باستخدام await داخل المكون [5]
-  // نستخدم هنا خيار revalidate لتفعيل تقنية ISR (التحديث الدوري) [9]
   const response = await fetch("https://dummyjson.com/posts", {
     cache: "force-cache", // SSG
     //  cache:"no-cache" // SSR
   });
-
   const data = await response.json();
-  console.log("data", data);
-
   return (
     <>
       {" "}
